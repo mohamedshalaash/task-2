@@ -1,0 +1,236 @@
+:root{
+    --main-color:#a6c76c;
+    --main-color2:#999;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.p,.h3{
+    color: var(--main-color2);
+}
+/* ============= START TOP SECTION STYLE =================  */
+.top-head{
+    background-color: #f3f3f3;
+    height: 1.1cm;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 4%;
+    color: #777;
+}
+.top-head a{
+    color: #777;
+}
+.top-head a:hover{
+    color: var(--main-color);
+}
+.top-head-items{
+    display: flex;
+    list-style-type:none ;
+    gap: 10px;
+    align-items: center;
+}
+.top-head select{
+    color: #777;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.top-head select:hover{
+    color: var(--main-color);
+}
+/* ============= END TOP SECTION STYLE =================  */
+
+/* ============= START HEADER ONE STYLE =================  */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 4%;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    height: 1px;
+    background-color: #ccc;
+}
+header .search section{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    color: var(--main-color2);
+    font-family: inherit;
+}
+header .search section input{
+    border: none;
+    outline: none;
+    width: 8cm;
+    border-right: 1px solid #ccc;
+}
+header .search section p{
+    font-size: 14px;
+    cursor: pointer;
+}
+header .search section .search-icon{
+    transform: rotate(90deg);
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+header .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    text-align: center;
+}
+header .items .icons{
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+}
+header .items .icons:hover{
+    color: var(--main-color);
+}
+header .items p{
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+header .items .count{
+    position: absolute;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: -12px;
+    top: -14px;
+}
+header .bar-icon-links,
+header .bar-icon-links-close{
+    width: .8cm;
+    height: .8cm;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+}
+header .bar-icon-links div{
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+header .bar-icon-links div:nth-child(odd){
+    width: 70%;
+}
+header .bar-icon-links-close div{
+    position: absolute;
+}
+header .bar-icon-links-close div:nth-child(odd){
+    opacity: 0;
+}
+header .bar-icon-links-close div:nth-child(2){
+    transform: rotate(50deg);
+}
+header .bar-icon-links-close div:nth-child(4){
+    transform: rotate(-50deg);
+}
+/* ============= START HEADER ONE STYLE =================  */
+
+/* =============== START HEADER TWO => CATEGORIES  =================== */
+.header-categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+}
+.header-categories .bar-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 1.3cm;
+    padding: 0 15px;
+    transition: .5s;
+    cursor: pointer;
+    width: 6cm;
+}
+.header-categories .bar-icon:hover{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.header-categories-items{
+    display: flex;
+    list-style-type:none ;
+    gap: 25px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid;
+    border-color: transparent #ccc ;
+}
+.header-categories-items li{
+    padding:15px 4px;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+}
+.header-categories-items li:hover{
+    color: var(--main-color);
+}
+.header-categories-items li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all .5s;
+    background-color: var(--main-color);
+}
+.header-categories-items li:hover::before{
+    width: 100%;
+}
+.header-categories-items .fa-chevron-down{
+    color: #999 ;
+    font-size: 12px;
+    margin-left: 4px;
+}
+.header-categories .right a{
+    display: flex;
+    align-items: center;
+    gap: 1cm;
+    color: #000;
+}
+/* =============== END HEADER TWO => CATEGORIES  =================== */

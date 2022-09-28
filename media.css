@@ -1,0 +1,30 @@
+/* RESPONSIVE <= MEDIA FILE */
+@media(max-width:1300px){
+    .header-categories .right {
+        display: none;
+    }
+    .header-categories-items{
+        border-right: none;
+    }
+}
+@media(max-width:950px){
+    header .search{
+        display: none;
+    }
+    .header-categories{
+        display: none;
+    }
+    header .bar-icon-links,
+    header .bar-icon-links-close{
+    display: flex;
+    }
+    header .items{
+        gap: 20px;
+    }
+    header .items .icons{
+        font-size: 20px;
+    }
+    .top-head-items{
+        display: none;
+    }
+}
